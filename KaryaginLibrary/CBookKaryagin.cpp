@@ -7,8 +7,7 @@ using namespace std;
 
 
 
-CBookKaryagin::CBookKaryagin()
-{}
+
 
 void CBookKaryagin::newBook()
 {
@@ -23,14 +22,11 @@ void CBookKaryagin::newBook()
 	cin >> price;
 }
 
-CBookKaryagin::CBookKaryagin(fstream& fin)
+void CBookKaryagin::addFromFile(fstream& fin)
 {
-	fin >> this->bookTitle >> this->author >> this->amount >> this->price;
+	fin >> bookTitle >> author >> amount >> price;
 }
 
-CBookKaryagin::~CBookKaryagin()
-{
-}
 
 
 void CBookKaryagin::outputOnDisplay()
@@ -51,17 +47,3 @@ void CBookKaryagin::outputInFile(fstream& fout)
 
 
 
-/*fstream& operator<<(fstream& fout, const CBook& book)
-{
-	fout << book.bookTitle << endl
-		<< book.author << endl
-		<< book.amount << endl
-		<< book.price << endl;
-	return fout;
-}
-
-fstream& operator>>(fstream& fin, CBook& book)
-{
-	fin >> book.bookTitle >> book.author >> book.amount >> book.price;
-	return fin;
-}*/

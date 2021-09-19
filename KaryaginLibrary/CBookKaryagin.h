@@ -12,14 +12,10 @@ class CBookKaryagin
 	int price = 0;
 	
 public:
-	CBookKaryagin();
 	void newBook();
-	CBookKaryagin(fstream& fin);
-	~CBookKaryagin();
+	void addFromFile(fstream& fin);
 	void outputOnDisplay();
 	void outputInFile(fstream& fout);
 
-	/*friend fstream& operator << (fstream& fout, const CBook& book);
-	friend fstream& operator >> (fstream& fin, CBook& book);*/
 };
 

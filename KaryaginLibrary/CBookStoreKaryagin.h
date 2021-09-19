@@ -5,10 +5,10 @@
 
 class CBookStoreKaryagin
 {
-	vector<CBookKaryagin>& listOfBooks;
+	vector<CBookKaryagin*> listOfBooks;
 public:
 	CBookStoreKaryagin();
-	void enterBook(const CBookKaryagin& book);
+	void enterBook();
 	~CBookStoreKaryagin();
 	void outputBooksListOnDisplay();
 	void readBooksListFromFile();
