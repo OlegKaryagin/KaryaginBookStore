@@ -24,12 +24,18 @@
     <ClCompile Include="CBookStoreKaryagin.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="CBookFiction.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CBookKaryagin.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="CBookStoreKaryagin.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="CBookFiction.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>

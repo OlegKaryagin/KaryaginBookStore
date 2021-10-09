@@ -1,6 +1,7 @@
 #include "CBookStoreKaryagin.h"
 #include <iostream>
 #include "CBookKaryagin.h"
+#include "CBookFiction.h"
 
 using namespace std;
 
@@ -15,6 +16,7 @@ void CBookStoreKaryagin::enterBook()
 	listOfBooks.push_back(book);
 }
 
+
 CBookStoreKaryagin::~CBookStoreKaryagin()
 {
 	for (CBookKaryagin* book : listOfBooks)
@@ -24,7 +26,17 @@ CBookStoreKaryagin::~CBookStoreKaryagin()
 void CBookStoreKaryagin::outputBooksListOnDisplay()
 {
 	for (int i = 0; i < listOfBooks.size(); i++)
+	{
 		listOfBooks[i]->outputOnDisplay();
+		cout << "--------------------" << endl;
+	}
+}
+
+void CBookStoreKaryagin::enterBookFiction()
+{
+	CBookFiction* book = new CBookFiction;
+	book->newBook();
+	listOfBooks.push_back(book);
 }
 
 void CBookStoreKaryagin::readBooksListFromFile()

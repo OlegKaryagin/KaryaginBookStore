@@ -11,6 +11,7 @@ public:
 	void enterBook();
 	~CBookStoreKaryagin();
 	void outputBooksListOnDisplay();
+	void enterBookFiction();
 	void readBooksListFromFile();
 	void writeBooksListInFile();
 	void clearBooksList();

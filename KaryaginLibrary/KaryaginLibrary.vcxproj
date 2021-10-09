@@ -139,11 +139,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CBookFiction.cpp" />
     <ClCompile Include="CBookKaryagin.cpp" />
     <ClCompile Include="CBookStoreKaryagin.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CBookFiction.h" />
     <ClInclude Include="CBookKaryagin.h" />
     <ClInclude Include="CBookStoreKaryagin.h" />
   </ItemGroup>

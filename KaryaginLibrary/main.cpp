@@ -2,6 +2,7 @@
 #include <fstream>
 #include "CBookKaryagin.h"
 #include "CBookStoreKaryagin.h"
+#include "CBookFiction.h"
 
 
 using namespace std;
@@ -13,6 +14,7 @@ void MainMenu()
 		<< "3. Load book list from file." << endl
 		<< "4. Save book list in file." << endl
 		<< "5. Clear book list." << endl
+		<< "6. Add fiction book in book list." << endl
 		<< "0. Exit." << endl
 		<< "Enter the code menu:" << endl;
 }
@@ -20,7 +22,7 @@ void MainMenu()
 int codeMenu()
 {
 	int code;
-	while ((cin >> code).fail() || code < 0 || code>5)
+	while ((cin >> code).fail() || code < 0 || code>6)
 	{
 		cin.clear();
 		cin.ignore(10000, '\n');
@@ -60,6 +62,11 @@ int main()
 			case 5:
 			{
 				bookList.clearBooksList();
+				break;
+			}
+			case 6:
+			{
+				bookList.enterBookFiction();
 				break;
 			}
 			case 0:

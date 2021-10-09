@@ -1,7 +1,7 @@
 #include "CBookKaryagin.h"
 #include <iostream>
 #include <fstream>
-#include "CBookKaryagin.h"
+#include "CBookFiction.h"
 
 using namespace std;
 

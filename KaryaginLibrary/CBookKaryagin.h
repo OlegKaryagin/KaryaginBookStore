@@ -12,10 +12,12 @@ class CBookKaryagin
 	int price = 0;
 	
 public:
-	void newBook();
+	virtual void newBook();
 	void addFromFile(fstream& fin);
-	void outputOnDisplay();
+	virtual void outputOnDisplay();
 	void outputInFile(fstream& fout);
+
+	
 
 };
 
